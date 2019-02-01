@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script type="text/javascript" src="carpool.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
 </head>
 
 <body>
-
     <div class="container">
+        <div id="map"></div>
         <iframe src="http://www.groupcarpool.com/t/g3p59n" height="600px" width="600px"></iframe>
     </div>
-
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDo9w8kB-aLCuz-cAdYLqHnGs75UF4Rc1k&callback=initMap"
+        type="text/javascript"></script>
 </body>
 
 </html>
