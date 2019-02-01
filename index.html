@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="carpool.js"></script>
+    
   
     <style>
       /* Set the size of the div element that contains the map */
-      #map {
-        height: 400px;  /* The height is 400 pixels */
-        width: 100%;  /* The width is the width of the web page */
-       }
+      
     </style>
   </head>
   <body>
@@ -22,21 +26,23 @@
 // Initialize and add the map
 function initMap() {
   // The location of Uluru
-  var uluru = {lat: -25.344, lng: 131.036};
+  var uluru = {lat: 33.464206, lng: -111.481962};
   // The map, centered at Uluru
   var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: uluru});
+      document.getElementById('map'), {zoom: 10, center: uluru});
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: uluru, map: map});
 }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLJ1TcATI9jE9sB3Mr6ILX-F-LBWW8EB4&callback=initMap"
     type="text/javascript"></script>
-  </body>
-</html>
-<body>
 
-    <div class="container"></div>
-    <div class="row"></div>
+
+    
+    <div class="container">
+        <iframe src="http://www.groupcarpool.com/t/g3p59n" height="600px" width="600px"></iframe>
+    </div>
+
 </body>
+
 </html>
