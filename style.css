@@ -1,6 +1,15 @@
 
 
 #map {
-    height: 400px;  /* The height is 400 pixels */
+    height: 250px;  /* The height is 400 pixels */
     width: 100%;  /* The width is the width of the web page */
+    margin-left: 10px; 
+   }
+   body{
+       background-image: url("images/back1.jpg");
+       background-size: cover;
+   }
+   iframe{
+       background-color: #f7dfcc;
+       margin-top: 50px;
    }
