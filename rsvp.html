@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RSVP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Welcome To Wedding Page</h1>
+
+        </div>
+
+
+
+        <div class="row" id="rsvp-form">
+            <div class="col-sm-12">
+                <br>
+
+                <div class="card">
+                    <div class="card-header">
+                        <strong>
+                            RSVP by</strong>
+                    </div>
+                    <div class="card-body">
+
+                        <!-- Here we create an HTML Form for handling the inputs-->
+                        <form role="form">
+
+                            <!-- Here we create the text box for capturing the search term-->
+                            <div class="form-group" id="form-email">
+                                <label for="guest-email">Email</label>
+                                <input type="email" class="form-control" id="guest-email" required>
+                            </div>
+                            <h6 class="text-danger" id="email-warning"></h6>
+
+                            <!-- Here we capture the number of records that the user wants to retrieve  -->
+                            <div class="form-group" id="form-name">
+                                <label for="guest-name">Full Name</label>
+                                <input type="text" class="form-control" id="guest-name">
+                            </div>
+                            <h6 class="text-danger" id="name-warning"></h6>
+
+                            <!-- Here we capture the Start Year Parameter-->
+                            <div class="form-group" id="form-size">
+                                <label for="group-size">Number of Attendees (Including Yourself)</label>
+                                <input type="number" class="form-control" id="group-size">
+                            </div>
+                            <h6 class="text-danger" id="size-warning"></h6>
+
+                            <!-- Here we capture the End Year Parameter -->
+                            <div class="form-group" id="form-message">
+                                <label for="guest-message">Message for the couple (Optional)</label>
+                                <textarea class="form-control" id="guest-message" rows="5"></textarea>
+                            </div>
+
+                            <!-- Here we have our final submit button -->
+                            <button type="submit" class="btn btn-primary" id="submit-button">
+                                Submit</button>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        List of Guests
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col"># of Attendees</th>
+                                    <th scope="col">Message</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-body">
+
+                            </tbody>
+                        </table>
+
+                        <h4 id="totalGuest"></h4>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script src="rsvp.js"></script>
+</body>
+
+</html>
