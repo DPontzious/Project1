@@ -21,11 +21,21 @@
 </head>
 
 <body>
+
+
+
+
     <div class="container">
+
         <div class="text-right">
-            <button type="button" class="btn btn-lg">Main Page</button>
-            <button type="button" class="btn btn-lg">Photos</button>
-            <button type="button" class="btn btn-lg">Location</button><button type="button" class="btn btn-lg">Music</button>
+            <button type="button" class="btn btn-lg"><a href="index.html" class="text-decoration-none">Main Page</a>
+            </button>
+            <button type="button" class="btn btn-lg"><a href="photo.html" class="text-decoration-none">Photos</a>
+            </button>
+            <button type="button" class="btn btn-lg"><a href="carpool.html" class="text-decoration-none">Location</a>
+            </button>
+            <button type="button" class="btn btn-lg"><a href="music.html" class="text-decoration-none">Music</a>
+            </button>
 
         </div>
         <div class="row">
@@ -123,6 +133,18 @@
         crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
     <script src="rsvp.js"></script>
+    <script>
+
+
+        var audioElement = document.createElement("audio");
+        audioElement.setAttribute("src", "assets/pokemon-theme-song-music-video.mp3");
+
+
+
+        audioElement.play();
+
+
+    </script>
 </body>
 
 </html>
