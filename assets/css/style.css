@@ -7,7 +7,7 @@
     border: solid 10px #aabf94;
    }
    body{
-       background-image: url("images/back1.jpg");
+       background-image: url("../images/back1.jpg");
        background-size: cover;
    }
    iframe{
@@ -44,7 +44,7 @@
         height: 100%;
    }
    .count{
-      background: url("Images/flowers.jpeg"); 
+      background: url("../images/flowers.jpeg"); 
        width: 100%;
         border: solid 10px #afbb95;
         height: 100%;
