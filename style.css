@@ -31,10 +31,11 @@
        margin-bottom: 15px;
    }
    #demo{
-       font-size: 100px;
+       font-size: 60px;
        text-align: center;
        font-weight: 800;
        line-height: 1;
+       text-shadow: 2px 2px #c48370;
    }
    .card{
        margin-bottom: 15px;

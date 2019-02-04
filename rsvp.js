@@ -70,7 +70,7 @@ function validateEmail(email) {
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 }
-var countDownDate = new Date("March 23, 2019 15:37:25").getTime();
+var countDownDate = new Date("March 23, 2019 14:30:25").getTime();
 var x = setInterval(function () {
     // console.log(countDownDate)
     // Get todays date and time
@@ -88,7 +88,7 @@ var x = setInterval(function () {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     // var countDown = 
     // Display the result in the element with id="demo"
-    $("#demo").text(days)
+    $("#demo").text(days + "d " + hours + "h " + minutes + "m ")
 
     // If the count down is finished, write some text 
     if (distance < 0) {
