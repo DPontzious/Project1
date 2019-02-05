@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Music</title>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/javascript/music.js"></script>
@@ -29,20 +29,40 @@
 
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <iframe src="https://open.spotify.com/embed/user/hgy7b48qtv7hbervxygyg3c48/playlist/7lj8pK87kMYQ6t7VgTle2h"
+            <div class="col-md-4 text-center">
+                <iframe id="spotifyPlaylist" src="https://open.spotify.com/embed/user/hgy7b48qtv7hbervxygyg3c48/playlist/7lj8pK87kMYQ6t7VgTle2h"
                     width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                
+                <button id="refreshBtn" class="btn">Refresh</button>
+                <h6>Playlist refresh may take up to 30 seconds.</h6>
+
+            </div>
+            <div class="col-md-8 ">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <br>
+                        <div class="form-group">
+                            <label for="songName">
+                                <h6>Song Name</h6>
+                            </label>
+                            <input type="songName" class="form-control" id="songName" aria-describedby="emailHelp"
+                                placeholder="Enter Song Name Only">
+                            <button type="submit" class="songButton btn rounded" style="background-color: #aabf94">Submit</button>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div id="songList" class="row">
+
+                </div>
+
+
             </div>
             <div class="col-md-4">
-                <div class="form-group">
-                    <label for="songName">Song Name</label>
-                    <input type="songName" class="form-control" id="songName" aria-describedby="emailHelp" placeholder="Enter Song Name Only">
-                    <button type="submit" class="songButton">Submit</button>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div id="songList"></div>
+
             </div>
         </div>
 
