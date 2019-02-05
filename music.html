@@ -16,6 +16,26 @@
 </head>
 
 <body>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  <main class="class">
+      <section>
+          <div class="form">
+              <form action="">
+                  <input type="search" value="">
+                  <input type="submit" value="Create Playlist">
+              </form>
+          </div>
+      </section>
+  </main>
+
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+=======
+=======
+
+=======
+>>>>>>> 7597a0a018f316a8e3f44e9c0f75c49a072d2c14
     <div class="container">
         <div class="text-right">
             <button type="button" class="btn btn-lg"><a href="index.html" class="text-decoration-none">Main Page</a>
@@ -32,7 +52,6 @@
             <div class="col-md-4">
                 <iframe src="https://open.spotify.com/embed/user/hgy7b48qtv7hbervxygyg3c48/playlist/7lj8pK87kMYQ6t7VgTle2h"
                     width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                <button>CLICK</button>
             </div>
             <div class="col-md-4">
                 <div class="form-group">
@@ -56,9 +75,46 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
+        </div>
+    </footer> -->
+>>>>>>> f4f534755d800d10c3f8a95553b75315dcded0ca
+    <script>
+        // curl - X "GET"
+        // "https://api.spotify.com/v1/playlists/7lj8pK87kMYQ6t7VgTle2h?fields=songs" - H "Accept: application/json" - H "Content-Type: application/json" - H "Authorization: Bearer BQCcRXpR44VHlzdSZgMep5-A2KB6rcj_4ElnwP_skoWsYg6JZu-ocg8tHoknRH7p7m4Wo65grRcUyICP0iAR7ZblJUFH1AAAsmDVObqWLAML7y74dgKbnj22vjvfg0rl7KQz6f4JSwgmf8BKmx8TTkRO-nz7LmYfII0q90jlVa_j0mhOe6Vv1IuzIECPxuwMpQnWmPN3pt7aktk"
+        handlePlaylist(a){
+            a.preventDefault();
+            var jsonData = {
+                name: a.target.playlistName.value,
+                public: true;
+                description: a.target.playlistDescription.value
+            };
+            ajax({
+                method: "GET"
+                url:
+            })
+        }
+        <script src="https://sdk.scdn.co/spotify-player.js"></script>
+    <script>
+            window.onSpotifyWebPlaybackSDKReady = () => {
+          const userAccessToken = "[";
+          const webPlayback = new Spotify.Player({
+                name: "Spotify Web Playback SDK",
+            getOAuthToken: callback => {callback(token)}
+          });
+                          webPlayback.connect();
+                        };
+    </script
+</script>
+>>>>>>> 49d7eacd1a9b36659702cd5281252c9694dde7be
+=======
         </footer>
     </div>
+<<<<<<< HEAD
+>>>>>>> 7597a0a018f316a8e3f44e9c0f75c49a072d2c14
+=======
 
+>>>>>>> 3120d53071b8d4e37fd944788709b0f65c5cad4c
 </body>
 
 
