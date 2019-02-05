@@ -1,4 +1,3 @@
-
 var config = {
     apiKey: "AIzaSyCLJ1TcATI9jE9sB3Mr6ILX-F-LBWW8EB4",
     authDomain: "project1map.firebaseapp.com",
