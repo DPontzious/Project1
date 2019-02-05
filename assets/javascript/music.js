@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(".songButton").click(function () {
         var userInput = $("#songName").val().trim();
-        
+
         $.ajax({
             url: "https://api.spotify.com/v1/search?q=" + userInput + "&type=track&limit=5",
             headers: {
@@ -24,8 +24,6 @@ $(document).ready(function () {
                 $("#songList").append(artistName, songName, artistImage, button);
             }
             console.log(data.tracks);
-            
-
         });
     });
 });
@@ -43,7 +41,7 @@ $(document).on("click", "#btn", function () {
         method: "POST",
     }).then(function (data) {
 
-        
+
     })
     setTimeout(refresh, 30000);
 });
