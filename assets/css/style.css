@@ -9,7 +9,6 @@
    body{
        background-image: url("../images/back1.jpg");
        background-size: cover;
-       display: flex;
    }
    iframe{
        background-color: white;
