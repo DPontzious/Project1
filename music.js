@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-window.onSpotifyWebPlaybackSDKReady = () => {
-    // You can now initialize Spotify.Player and use the SDK
-  };
-//   go to spotify get artist 
-//   get artist id albums 
-=======
 $(document).ready(function () {
     $(".songButton").click(function () {
         var userInput = $("#songName").val().trim();
@@ -57,4 +50,3 @@ $(document).ready(function () {
 
         //     })
         // });
->>>>>>> 7597a0a018f316a8e3f44e9c0f75c49a072d2c14
