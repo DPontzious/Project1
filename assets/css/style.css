@@ -27,7 +27,11 @@
        margin-left: 5px;
        background-color: #e8ad9a;
        margin-bottom: 15px;
+       color: black;
    }
+  a{
+      color: black;
+  }
    #demo{
        font-size: 60px;
        text-align: center;
@@ -51,4 +55,10 @@
    .card-body{
        color: #e8ad9a;
        width: 100%;
+<<<<<<< HEAD
+=======
+   }
+   #countdownText{
+        text-shadow: 2px 2px #c48370;
+>>>>>>> 8f4e2ff825fb55d30c3e3d7e5e9c0c73acf9fd05
    }
