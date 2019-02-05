@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/javascript/music.js"></script>
-    <title>Music</title>
-    <link rel="icon" type="image/jpg" href="assets/images/favicon.jpg">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-
     <div class="container">
         <div class="text-right">
             <button type="button" class="btn btn-lg"><a href="index.html" class="text-decoration-none">Main Page</a>
@@ -27,45 +28,37 @@
             </button>
 
         </div>
-    </div>
-    <footer class="mt-4" style="background-color: #aabf94; opacity: 0.7">
-        <div class="container-fluid py-3">
-
-            <div class="row">
-                <div class="col text-center text-white">
-                    <p>Built by Paul, Danelle, Yasiin and Mustafa</p>
-
+        <div class="row">
+            <div class="col-md-4">
+                <iframe src="https://open.spotify.com/embed/user/hgy7b48qtv7hbervxygyg3c48/playlist/7lj8pK87kMYQ6t7VgTle2h"
+                    width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <button>CLICK</button>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="songName">Song Name</label>
+                    <input type="songName" class="form-control" id="songName" aria-describedby="emailHelp" placeholder="Enter Song Name Only">
+                    <button type="submit" class="songButton">Submit</button>
                 </div>
             </div>
+            <div class="col-md-3">
+                <div id="songList"></div>
+            </div>
         </div>
-    </footer>
-    <script>
-        // curl - X "GET"
-        // "https://api.spotify.com/v1/playlists/7lj8pK87kMYQ6t7VgTle2h?fields=songs" - H "Accept: application/json" - H "Content-Type: application/json" - H "Authorization: Bearer BQCcRXpR44VHlzdSZgMep5-A2KB6rcj_4ElnwP_skoWsYg6JZu-ocg8tHoknRH7p7m4Wo65grRcUyICP0iAR7ZblJUFH1AAAsmDVObqWLAML7y74dgKbnj22vjvfg0rl7KQz6f4JSwgmf8BKmx8TTkRO-nz7LmYfII0q90jlVa_j0mhOe6Vv1IuzIECPxuwMpQnWmPN3pt7aktk"
-        handlePlaylist(a){
-            a.preventDefault();
-            var jsonData = {
-                name: a.target.playlistName.value,
-                public: true;
-                description: a.target.playlistDescription.value
-            };
-            ajax({
-                method: "GET"
-                url:
-            })
-        }
-        <script src="https://sdk.scdn.co/spotify-player.js"></script>
-    <script>
-            window.onSpotifyWebPlaybackSDKReady = () => {
-          const userAccessToken = "[";
-          const webPlayback = new Spotify.Player({
-                name: "Spotify Web Playback SDK",
-            getOAuthToken: callback => {callback(token)}
-          });
-                          webPlayback.connect();
-                        };
-    </script
-</script>
+
+        <footer class="mt-4" style="background-color: #aabf94; opacity: 0.7">
+            <div class="container-fluid py-3">
+
+                <div class="row">
+                    <div class="col text-center text-white">
+                        <p>Built by Paul, Danelle, Yasiin and Mustafa</p>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
+
 
 </html>
