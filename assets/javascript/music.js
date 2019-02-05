@@ -7,7 +7,7 @@ $(document).ready(function () {
             headers: {
                 "Accept": "application/json",
                 "Content-Type": "application/json",
-                "Authorization": "Bearer BQAyJ8iwmAox0oZCzZxnd_NFaZKQM6_jW-dxzKK48NGsaEmzeuUEaT1vbii3NgSgXZNBrKnLcOLM3Y4Xwdek5BZpq056z5TADriLiFys0r7RvbdscwOOcGY0ieyG-wshhbwvyyi9-nXJDJ4-CN0KbcO6-LDMs1d8_VW4iaMnIbuD_vRh1p2R9-NU9vIedReIOjg5keGjfYmWbms49mADR6M5XF8YIrpWsA6sEQwICB8m6NE",
+                "Authorization": "Bearer BQCXQMniR0dYQEq7GtNqEvsupVKnYwL97RC634-etQisjuARoWzSUosbHhyyF1Ryd27IaSz2H0TLWBWUVegMUfJJSZCzmXdebCXRYP89nB7J0kFtwW0OA4dtvS0pK1Kdyn6p5QsGM7juWP0JYznrMjK2BVBKZd9jVGgITkY03okdPrfibWP0PPeRSvl6yJGDc846NSxaaXhgMMOd83rz6K6k8LBxpW9giqiYq28nG_Fjnho",
 
             },
             "expires_in": 999999999999999999999999999999999999999,
@@ -24,7 +24,7 @@ $(document).ready(function () {
                 $("#songList").append(artistName, songName, artistImage, button);
             }
             console.log(data.tracks);
-           
+            
 
         });
     });
@@ -37,7 +37,7 @@ $(document).on("click", "#btn", function () {
         headers: {
             "Accept": "application/json",
             "Content-Type": "application/json",
-            "Authorization": "Bearer BQAyJ8iwmAox0oZCzZxnd_NFaZKQM6_jW-dxzKK48NGsaEmzeuUEaT1vbii3NgSgXZNBrKnLcOLM3Y4Xwdek5BZpq056z5TADriLiFys0r7RvbdscwOOcGY0ieyG-wshhbwvyyi9-nXJDJ4-CN0KbcO6-LDMs1d8_VW4iaMnIbuD_vRh1p2R9-NU9vIedReIOjg5keGjfYmWbms49mADR6M5XF8YIrpWsA6sEQwICB8m6NE",
+            "Authorization": "Bearer BQCXQMniR0dYQEq7GtNqEvsupVKnYwL97RC634-etQisjuARoWzSUosbHhyyF1Ryd27IaSz2H0TLWBWUVegMUfJJSZCzmXdebCXRYP89nB7J0kFtwW0OA4dtvS0pK1Kdyn6p5QsGM7juWP0JYznrMjK2BVBKZd9jVGgITkY03okdPrfibWP0PPeRSvl6yJGDc846NSxaaXhgMMOd83rz6K6k8LBxpW9giqiYq28nG_Fjnho",
         },
         "expires_in": 999999999999999999999999999999999999999,
         method: "POST",
@@ -47,6 +47,7 @@ $(document).on("click", "#btn", function () {
     })
     setTimeout(refresh, 30000);
 });
+
 function refresh() {
     location.reload();
 }
