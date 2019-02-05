@@ -15,18 +15,24 @@ $(document).ready(function () {
             $("#songList").empty();
             for (var i = 0; i < 5; i++) {
 
-                var artistName = $("<h4>").text(data.tracks.items[i].artists[0].name);
-                var songName = $("<h5>").text("Song: " + data.tracks.items[i].name);
+                var frameSong = $("<div>").addClass("col-4");
+
+                var artistName = $("<h5>").text(data.tracks.items[i].artists[0].name);
+                var songName = $("<h6>").text("Song: " + data.tracks.items[i].name);
                 var artistImage = $("<img>").attr("src", data.tracks.items[i].album.images[2].url);
-                var button = $("<button id= btn>").attr("data-id", data.tracks.items[i].uri).text("THIS ONE");
+                var button = $("<button id= btn>").attr("data-id", data.tracks.items[i].uri).text("Add to Playlist");
+                button.addClass("btn rounded");
+                button.attr("style", "background-color: #aabf94");
+
+                frameSong.append(artistName, songName, artistImage, button);
 
 
-                $("#songList").append(artistName, songName, artistImage, button);
+                $("#songList").append(frameSong);
             }
             console.log(data.tracks);
         });
     });
-});
+
 $(document).on("click", "#btn", function () {
     var userSong = $(this).attr("data-id");
     console.log($(this).attr("data-id"))
@@ -43,9 +49,24 @@ $(document).on("click", "#btn", function () {
 
 
     })
-    setTimeout(refresh, 30000);
+
+    
+   
 });
 
+$("#refreshBtn").on("click", refresh);
+
 function refresh() {
-    location.reload();
+    
+    $("#spotifyPlaylist").attr("src", "");
+    $("#spotifyPlaylist").attr("src", "https://open.spotify.com/embed/user/hgy7b48qtv7hbervxygyg3c48/playlist/7lj8pK87kMYQ6t7VgTle2h");
+
+
 }
+
+
+
+
+
+
+});
