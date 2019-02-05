@@ -55,6 +55,11 @@
    .card-body{
        color: #e8ad9a;
        width: 100%;
+
+   }
+
+   #refreshBtn {
+       background-color: #afbb95;
    }
    #countdownText{
         text-shadow: 2px 2px #c48370;
