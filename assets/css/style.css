@@ -9,7 +9,6 @@
    body{
        background-image: url("../images/back1.jpg");
        background-size: cover;
-       display: flex;
    }
    iframe{
        background-color: white;
@@ -54,13 +53,4 @@
    .card-body{
        color: #e8ad9a;
        width: 100%;
-   }
-   h3{
-      text-shadow: 2px 2px #c48370; 
-   }
-  .container{
-       width: 100%;
-   }
-   form{
-       background-color: yellow;
    }
