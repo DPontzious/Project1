@@ -47,8 +47,8 @@ $("#submit-button").on("click", function (event) {
 database.ref().on("child_added", function (childSnapshot) {
     totalGuest = totalGuest + parseInt(childSnapshot.val().size);
     var newTableItem = $("<tr>");
-    var tableGuestEmail = $("<td>");
-    tableGuestEmail.text(childSnapshot.val().email);
+    // var tableGuestEmail = $("<td>");
+    // tableGuestEmail.text(childSnapshot.val().email);
     var tableGuestName = $("<td>");
     tableGuestName.text(childSnapshot.val().name);
     var tableNumberAttendees = $("<td>");
@@ -56,7 +56,7 @@ database.ref().on("child_added", function (childSnapshot) {
     var tableMessage = $("<td>");
     tableMessage.text(childSnapshot.val().message);
     newTableItem.append(tableGuestName);
-    newTableItem.append(tableGuestEmail);
+    // newTableItem.append(tableGuestEmail);
     newTableItem.append(tableNumberAttendees);
     newTableItem.append(tableMessage);
     $("#table-body").append(newTableItem);

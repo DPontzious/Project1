@@ -7,9 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script type="text/javascript" src="music.js"></script>
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <div class="container">
+        <div class="text-right">
+            <button type="button" class="btn btn-lg"><a href="index.html" class="text-decoration-none">Main Page</a>
+            </button>
+            <button type="button" class="btn btn-lg"><a href="photo.html" class="text-decoration-none">Photos</a>
+            </button>
+            <button type="button" class="btn btn-lg"><a href="carpool.html" class="text-decoration-none">Location</a>
+            </button>
+            <button type="button" class="btn btn-lg"><a href="music.html" class="text-decoration-none">Music</a>
+            </button>
+
+        </div>
+    </div>
+    <!-- <footer class="mt-4" style="background-color: #aabf94; opacity: 0.7">
+        <div class="container-fluid py-3">
+
+            <div class="row">
+                <div class="col text-center text-white">
+                    <p>Built by Paul, Danelle, Yasiin and Mustafa</p>
+
+                </div>
+            </div>
+        </div>
+    </footer> -->
     <script>
         // curl - X "GET"
         // "https://api.spotify.com/v1/playlists/7lj8pK87kMYQ6t7VgTle2h?fields=songs" - H "Accept: application/json" - H "Content-Type: application/json" - H "Authorization: Bearer BQCcRXpR44VHlzdSZgMep5-A2KB6rcj_4ElnwP_skoWsYg6JZu-ocg8tHoknRH7p7m4Wo65grRcUyICP0iAR7ZblJUFH1AAAsmDVObqWLAML7y74dgKbnj22vjvfg0rl7KQz6f4JSwgmf8BKmx8TTkRO-nz7LmYfII0q90jlVa_j0mhOe6Vv1IuzIECPxuwMpQnWmPN3pt7aktk"
@@ -33,8 +61,8 @@
                 name: "Spotify Web Playback SDK",
             getOAuthToken: callback => {callback(token)}
           });
-                      webPlayback.connect();
-                    };
+                          webPlayback.connect();
+                        };
     </script
 </script>
 </body>

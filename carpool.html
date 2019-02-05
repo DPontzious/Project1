@@ -18,7 +18,18 @@
 
 <body>
     <div class="container">
-        <h3>How to get to the wedding...</h3>
+        <div class="text-right">
+            <button type="button" class="btn btn-lg"><a href="index.html" class="text-decoration-none">Main Page</a>
+            </button>
+            <button type="button" class="btn btn-lg"><a href="photo.html" class="text-decoration-none">Photos</a>
+            </button>
+            <button type="button" class="btn btn-lg"><a href="carpool.html" class="text-decoration-none">Location</a>
+            </button>
+            <button type="button" class="btn btn-lg"><a href="music.html" class="text-decoration-none">Music</a>
+            </button>
+
+        </div>
+        <!-- <h3>How to get to the wedding...</h3> -->
         <!--The div element for the map -->
         <div class="row">
             <div class="col-md-8">
@@ -31,19 +42,31 @@
                         <p class="card-text">Lost Dutchman State Park<br>
                             6109 N Apache Trail <br>
                             Apache Junction, AZ 85119</p>
-                            <form action="http://maps.google.com/maps" method="get" target="_blank">
-                        
-                        
-                                <input type="hidden" name="daddr" value="Lost Dutchman State Park, 6109 N Apache Trail, Apache Junction, AZ 85119" />
-                                <input type="submit" value="Get directions" />
-                             </form>
+                        <form action="http://maps.google.com/maps" method="get" target="_blank">
+
+
+                            <input type="hidden" name="daddr" value="Lost Dutchman State Park, 6109 N Apache Trail, Apache Junction, AZ 85119" />
+                            <input type="submit" value="Get directions" />
+                        </form>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
         <iframe src="http://www.groupcarpool.com/t/g3p59n" height="600px" width="100%"></iframe>
     </div>
+
+    <footer class="mt-4" style="background-color: #aabf94; opacity: 0.7">
+        <div class="container-fluid py-3">
+
+            <div class="row">
+                <div class="col text-center text-white">
+                    <p>Built by Paul, Danelle, Yasiin and Mustafa</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLJ1TcATI9jE9sB3Mr6ILX-F-LBWW8EB4&callback=initMap"
