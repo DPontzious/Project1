@@ -1,10 +1,10 @@
 var config = {
-    apiKey: "AIzaSyCY5LFhmYiFOWKV7SAwuRkQe2nXMSrPg4w",
-    authDomain: "rsvp-86623.firebaseapp.com",
-    databaseURL: "https://rsvp-86623.firebaseio.com",
-    projectId: "rsvp-86623",
-    storageBucket: "rsvp-86623.appspot.com",
-    messagingSenderId: "784466437764"
+    apiKey: "AIzaSyAjOckR80NCLOYl1Pb3M1EPwz1TnRBS0AY",
+    authDomain: "project-25482.firebaseapp.com",
+    databaseURL: "https://project-25482.firebaseio.com",
+    projectId: "project-25482",
+    storageBucket: "project-25482.appspot.com",
+    messagingSenderId: "776832260377"
 };
 firebase.initializeApp(config);
 var database = firebase.database();

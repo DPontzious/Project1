@@ -10,14 +10,16 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
     <style>
 
         img {
             height: 500px;
+            
         }
+
 
       
     </style>
@@ -78,16 +80,14 @@
             <div class="card-body justify-content-center">
                 <h5 class="card-title">Upload a Photo</h5>
                 <p class="card-text">Add some of your bride and groom pictures here.</p>
-                <a href="#" class="btn btn-primary"><label for="fileButton">Upload</label><input type="file" value="upload"
-                        id="fileButton" style="display:none" /></a>
+                <button class="btn btn-primary"><label for="fileButton">Upload</label><input type="file" value="upload"
+                        id="fileButton" style="display:none" /></button>
                 <div id="uploadBttn"></div>
             </div>
         </div>
 
 
-        <!-- <input id="fileInpt" type="file" />
-        <br />
-        <img id="imagePreview" alt="image preview" /> -->
+
     </div>
 
 
@@ -186,16 +186,6 @@
 
 
 
-                // $(".carousel-indicators").empty();
-                // $(".carousel-inner").empty();
-
-
-
-
-
-
-
-
                 var imgHolder = $("<img>");
 
 
@@ -212,11 +202,12 @@
 
                 var carouselIndicator = $("<li>").attr("data-target", "#carouselExampleIndicators");
                 carouselIndicator.attr("data-slide-to", i);
+                carouselIndicator.addClass("bg-primary");
 
                 var imageDiv = $("<div>").addClass("carousel-item");
 
                 imgHolder.attr("alt", "wedding");
-                imgHolder.addClass("d-block w-100");
+                imgHolder.addClass("mx-auto d-block");
 
 
 
@@ -250,7 +241,7 @@
             });
 
             var audioElement = document.createElement("audio");
-            audioElement.setAttribute("src", "audio/themesong.mp3");
+            audioElement.setAttribute("src", "assets/audio/themesong.mp3");
 
             // Theme Button
             $(".theme-button").on("click", function () {
