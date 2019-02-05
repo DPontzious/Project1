@@ -45,7 +45,7 @@ $(document).on("click", "#btn", function () {
 
         
     })
-    setTimeout(refresh, 30000);
+    setTimeout(refresh, 300);
 });
 
 function refresh() {
