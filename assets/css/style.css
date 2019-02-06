@@ -47,21 +47,13 @@
    .card{
        margin-bottom: 15px;
        width: 100%;
-<<<<<<< HEAD
         border: solid 10px #aabf94;
-=======
-        border: solid 10px #afbb94;
->>>>>>> d45b60f502e7c49a21376c4c69f99a7397d3f1ff
         height: 100%;
    }
    .count{
       background: url("../images/flowers.jpeg"); 
        width: 100%;
-<<<<<<< HEAD
         border: solid 10px #aabf94;
-=======
-        border: solid 10px #afbb94;
->>>>>>> d45b60f502e7c49a21376c4c69f99a7397d3f1ff
         height: 100%;
         margin-bottom: 15px;
    }
@@ -72,16 +64,10 @@
    }
 
    #refreshBtn {
-<<<<<<< HEAD
        background-color: #aabf94;
-=======
-       background-color: #afbb94;
->>>>>>> d45b60f502e7c49a21376c4c69f99a7397d3f1ff
    }
    #countdownText{
         text-shadow: 2px 2px #c48370;
    }
-   .form-group{
-
-    text-align: center;
-   }
+   
+   
