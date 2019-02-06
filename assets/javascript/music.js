@@ -5,25 +5,28 @@ $(document).ready(function () {
         var userInput = $("#songName").val().trim();
 
         $.ajax({
-            url: "https://api.spotify.com/v1/search?q=" + userInput + "&type=track&limit=5",
+            url: "https://api.spotify.com/v1/search?q=" + userInput + "&type=track&limit=6",
             headers: {
                 "Accept": "application/json",
                 "Content-Type": "application/json",
-                "Authorization": "Bearer BQBbzIWOqmkQMQcZoYqpOLWxn5OTLuJ-GGSULD6kZSu8Lz4cIX1XdVq3WA0bshm5xOzr_XOv9k6VtVEOC-2ax6BjGsBgyoZVs6GV0f8vYRFGtQ-QiKln5QBmIKWwqPEzYFNAQ_EgN2RrJQbwm7DtkJf0JKr3-JtRW8fCzD7tWdByGI1EzXdh6yqBYVbvpMOzoWh4Iv6zlNhFaHcU7lowY1wiRuqnApbAe8Kk4mkdgF6hVjc",
+                "Authorization": "Bearer BQDUzY_-lEHakMTH7KHSaC5aNnxI1um5uZL7y9ZCs5xb6xIW_nVqFtoF3-HxDiyXu2gpQA6Ou4mDiupJLxD_CESYbtxRbQnBGVpTXl9-i575A4TLGsUKWge7oCCnSMLe3KGgaH0LeLqtpesHqPWut7M62R3rKr0wKaTGS0cObxrr8U2Bin2cL0zL7FL62SSP-7zJjYfIG3dnc2a--imWBsM7nM4WJIN6ynvxEupj9W97DHw",
 
             },
             "expires_in": 999999999999999999999999999999999999999,
         }).then(function (data) {
             $("#songList").empty();
-            for (var i = 0; i < 5; i++) {
+            for (var i = 0; i < 6; i++) {
 
                 var frameSong = $("<div>").addClass("col-4");
 
                 var artistName = $("<h5>").text(data.tracks.items[i].artists[0].name);
+                artistName.addClass("align-self-start");
                 var songName = $("<h6>").text("Song: " + data.tracks.items[i].name);
+
                 var artistImage = $("<img>").attr("src", data.tracks.items[i].album.images[2].url);
+                artistImage.addClass("align-self-center");
                 var button = $("<button id= btn>").attr("data-id", data.tracks.items[i].uri).text("Add to Playlist");
-                button.addClass("btn rounded");
+                button.addClass("btn mt-3 ml-0 rounded align-self-end");
                 button.attr("style", "background-color: #aabf94");
 
                 frameSong.append(artistName, songName, artistImage, button);
@@ -43,32 +46,29 @@ $(document).ready(function () {
             headers: {
                 "Accept": "application/json",
                 "Content-Type": "application/json",
-                "Authorization": "Bearer BQBbzIWOqmkQMQcZoYqpOLWxn5OTLuJ-GGSULD6kZSu8Lz4cIX1XdVq3WA0bshm5xOzr_XOv9k6VtVEOC-2ax6BjGsBgyoZVs6GV0f8vYRFGtQ-QiKln5QBmIKWwqPEzYFNAQ_EgN2RrJQbwm7DtkJf0JKr3-JtRW8fCzD7tWdByGI1EzXdh6yqBYVbvpMOzoWh4Iv6zlNhFaHcU7lowY1wiRuqnApbAe8Kk4mkdgF6hVjc",
+                "Authorization": "Bearer BQDUzY_-lEHakMTH7KHSaC5aNnxI1um5uZL7y9ZCs5xb6xIW_nVqFtoF3-HxDiyXu2gpQA6Ou4mDiupJLxD_CESYbtxRbQnBGVpTXl9-i575A4TLGsUKWge7oCCnSMLe3KGgaH0LeLqtpesHqPWut7M62R3rKr0wKaTGS0cObxrr8U2Bin2cL0zL7FL62SSP-7zJjYfIG3dnc2a--imWBsM7nM4WJIN6ynvxEupj9W97DHw",
             },
             "expires_in": 999999999999999999999999999999999999999,
             method: "POST",
         }).then(function (data) {
 
 
-        })
+
+        });
+
+        $("#refreshBtn").on("click", refresh);
+
+        function refresh() {
+
+            $("#spotifyPlaylist").attr("src", "");
+            $("#spotifyPlaylist").attr("src", "https://open.spotify.com/embed/user/hgy7b48qtv7hbervxygyg3c48/playlist/7lj8pK87kMYQ6t7VgTle2h");
+
+
+        }
+
+
+
 
 
 
     });
-
-    $("#refreshBtn").on("click", refresh);
-
-    function refresh() {
-
-        $("#spotifyPlaylist").attr("src", "");
-        $("#spotifyPlaylist").attr("src", "https://open.spotify.com/embed/user/hgy7b48qtv7hbervxygyg3c48/playlist/7lj8pK87kMYQ6t7VgTle2h");
-
-
-    }
-
-
-
-
-
-
-});
