@@ -9,11 +9,7 @@ $(document).ready(function () {
             headers: {
                 "Accept": "application/json",
                 "Content-Type": "application/json",
-<<<<<<< HEAD
-                "Authorization": "Bearer BQD1ird5pqsaNKe1tIWR5acRhpYaVA18jFP1riVg_y8EvW7_3_ORX24AoXrmMFqx5VXEKlTaVMf9yAAYuJpyWuRxVptPNbaPIsGfoFGFNUBCDrifICSpLAfO72CY2OBmuz4rWrN5HuwT_sv7qwaqh1T8o2p9zO_XY1lIIjMwo9fHvORckczQNVCjgvR-tdp20xs_BlQfcI-Ku-E4TVS-NZgdURxy2xutcZtQ4TP8pHfvmD0",
-=======
                 "Authorization": "Bearer BQDUzY_-lEHakMTH7KHSaC5aNnxI1um5uZL7y9ZCs5xb6xIW_nVqFtoF3-HxDiyXu2gpQA6Ou4mDiupJLxD_CESYbtxRbQnBGVpTXl9-i575A4TLGsUKWge7oCCnSMLe3KGgaH0LeLqtpesHqPWut7M62R3rKr0wKaTGS0cObxrr8U2Bin2cL0zL7FL62SSP-7zJjYfIG3dnc2a--imWBsM7nM4WJIN6ynvxEupj9W97DHw",
->>>>>>> ff8523331c45b35b4ec009df80c1cfd325bacfca
 
             },
             "expires_in": 999999999999999999999999999999999999999,
@@ -50,11 +46,7 @@ $(document).on("click", "#btn", function () {
         headers: {
             "Accept": "application/json",
             "Content-Type": "application/json",
-<<<<<<< HEAD
-            "Authorization": "Bearer BQD1ird5pqsaNKe1tIWR5acRhpYaVA18jFP1riVg_y8EvW7_3_ORX24AoXrmMFqx5VXEKlTaVMf9yAAYuJpyWuRxVptPNbaPIsGfoFGFNUBCDrifICSpLAfO72CY2OBmuz4rWrN5HuwT_sv7qwaqh1T8o2p9zO_XY1lIIjMwo9fHvORckczQNVCjgvR-tdp20xs_BlQfcI-Ku-E4TVS-NZgdURxy2xutcZtQ4TP8pHfvmD0",
-=======
             "Authorization": "Bearer BQDUzY_-lEHakMTH7KHSaC5aNnxI1um5uZL7y9ZCs5xb6xIW_nVqFtoF3-HxDiyXu2gpQA6Ou4mDiupJLxD_CESYbtxRbQnBGVpTXl9-i575A4TLGsUKWge7oCCnSMLe3KGgaH0LeLqtpesHqPWut7M62R3rKr0wKaTGS0cObxrr8U2Bin2cL0zL7FL62SSP-7zJjYfIG3dnc2a--imWBsM7nM4WJIN6ynvxEupj9W97DHw",
->>>>>>> ff8523331c45b35b4ec009df80c1cfd325bacfca
         },
         "expires_in": 999999999999999999999999999999999999999,
         method: "POST",
