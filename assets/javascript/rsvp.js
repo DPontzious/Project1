@@ -26,9 +26,9 @@ $("#submit-button").on("click", function (event) {
         $("#guest-name").val("");
         $("#group-size").val("");
         $("#guest-message").val("");
-        // Commented this out because it gets rid of the div and we dont want that
-        // $("#rsvp-form").empty();
-        // $("#rsvp-form").append($("<h5>").text("Successfully Submitted.").addClass("text-success"));
+        
+        $("#submitSuccess").append($("<h5>").text("Successfully Submitted.").addClass("text-success"));
+        setTimeout(function(){$("#submitSuccess").empty(); }, 5000);
     } else {
         $("#email-warning").text("");
         $("#name-warning").text("");
@@ -96,3 +96,5 @@ var x = setInterval(function () {
         $("#demo").text("Days Left" + days)
     }
 }, 1000);
+
+
