@@ -9,7 +9,7 @@ $(document).ready(function () {
             headers: {
                 "Accept": "application/json",
                 "Content-Type": "application/json",
-                "Authorization": "Bearer BQCXQMniR0dYQEq7GtNqEvsupVKnYwL97RC634-etQisjuARoWzSUosbHhyyF1Ryd27IaSz2H0TLWBWUVegMUfJJSZCzmXdebCXRYP89nB7J0kFtwW0OA4dtvS0pK1Kdyn6p5QsGM7juWP0JYznrMjK2BVBKZd9jVGgITkY03okdPrfibWP0PPeRSvl6yJGDc846NSxaaXhgMMOd83rz6K6k8LBxpW9giqiYq28nG_Fjnho",
+                "Authorization": "Bearer BQBbzIWOqmkQMQcZoYqpOLWxn5OTLuJ-GGSULD6kZSu8Lz4cIX1XdVq3WA0bshm5xOzr_XOv9k6VtVEOC-2ax6BjGsBgyoZVs6GV0f8vYRFGtQ-QiKln5QBmIKWwqPEzYFNAQ_EgN2RrJQbwm7DtkJf0JKr3-JtRW8fCzD7tWdByGI1EzXdh6yqBYVbvpMOzoWh4Iv6zlNhFaHcU7lowY1wiRuqnApbAe8Kk4mkdgF6hVjc",
 
             },
             "expires_in": 999999999999999999999999999999999999999,
@@ -35,36 +35,36 @@ $(document).ready(function () {
         });
     });
 
-$(document).on("click", "#btn", function () {
-    var userSong = $(this).attr("data-id");
-    console.log($(this).attr("data-id"))
-    $.ajax({
-        url: "https://api.spotify.com/v1/playlists/7lj8pK87kMYQ6t7VgTle2h/tracks?uris=" + userSong,
-        headers: {
-            "Accept": "application/json",
-            "Content-Type": "application/json",
-            "Authorization": "Bearer BQCXQMniR0dYQEq7GtNqEvsupVKnYwL97RC634-etQisjuARoWzSUosbHhyyF1Ryd27IaSz2H0TLWBWUVegMUfJJSZCzmXdebCXRYP89nB7J0kFtwW0OA4dtvS0pK1Kdyn6p5QsGM7juWP0JYznrMjK2BVBKZd9jVGgITkY03okdPrfibWP0PPeRSvl6yJGDc846NSxaaXhgMMOd83rz6K6k8LBxpW9giqiYq28nG_Fjnho",
-        },
-        "expires_in": 999999999999999999999999999999999999999,
-        method: "POST",
-    }).then(function (data) {
+    $(document).on("click", "#btn", function () {
+        var userSong = $(this).attr("data-id");
+        console.log($(this).attr("data-id"))
+        $.ajax({
+            url: "https://api.spotify.com/v1/playlists/7lj8pK87kMYQ6t7VgTle2h/tracks?uris=" + userSong,
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json",
+                "Authorization": "Bearer BQBbzIWOqmkQMQcZoYqpOLWxn5OTLuJ-GGSULD6kZSu8Lz4cIX1XdVq3WA0bshm5xOzr_XOv9k6VtVEOC-2ax6BjGsBgyoZVs6GV0f8vYRFGtQ-QiKln5QBmIKWwqPEzYFNAQ_EgN2RrJQbwm7DtkJf0JKr3-JtRW8fCzD7tWdByGI1EzXdh6yqBYVbvpMOzoWh4Iv6zlNhFaHcU7lowY1wiRuqnApbAe8Kk4mkdgF6hVjc",
+            },
+            "expires_in": 999999999999999999999999999999999999999,
+            method: "POST",
+        }).then(function (data) {
 
 
-    })
-
-    
-   
-});
-
-$("#refreshBtn").on("click", refresh);
-
-function refresh() {
-    
-    $("#spotifyPlaylist").attr("src", "");
-    $("#spotifyPlaylist").attr("src", "https://open.spotify.com/embed/user/hgy7b48qtv7hbervxygyg3c48/playlist/7lj8pK87kMYQ6t7VgTle2h");
+        })
 
 
-}
+
+    });
+
+    $("#refreshBtn").on("click", refresh);
+
+    function refresh() {
+
+        $("#spotifyPlaylist").attr("src", "");
+        $("#spotifyPlaylist").attr("src", "https://open.spotify.com/embed/user/hgy7b48qtv7hbervxygyg3c48/playlist/7lj8pK87kMYQ6t7VgTle2h");
+
+
+    }
 
 
 
