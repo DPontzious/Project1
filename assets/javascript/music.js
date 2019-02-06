@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    $(".songButton").click(function () {
+    $(".songButton").click(function (event) {
+        event.preventDefault();
+
         var userInput = $("#songName").val().trim();
 
         $.ajax({

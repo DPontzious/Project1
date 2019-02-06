@@ -16,7 +16,7 @@ $("#submit-button").on("click", function (event) {
     var groupSize = $("#group-size").val();
     var guestMessage = $("#guest-message").val().trim();
     if (validateEmail(guestEmail) && guestName.length > 2 && groupSize > 0) {
-        database.ref().push({
+        database.ref("/rsvp").push({
             email: guestEmail,
             name: guestName,
             size: groupSize,
@@ -26,9 +26,9 @@ $("#submit-button").on("click", function (event) {
         $("#guest-name").val("");
         $("#group-size").val("");
         $("#guest-message").val("");
-        // Commented this out because it gets rid of the div and we dont want that
-        // $("#rsvp-form").empty();
-        // $("#rsvp-form").append($("<h5>").text("Successfully Submitted.").addClass("text-success"));
+        
+        $("#submitSuccess").append($("<h5>").text("Successfully Submitted.").addClass("text-success"));
+        setTimeout(function(){$("#submitSuccess").empty(); }, 5000);
     } else {
         $("#email-warning").text("");
         $("#name-warning").text("");
@@ -44,7 +44,7 @@ $("#submit-button").on("click", function (event) {
         }
     }
 });
-database.ref().on("child_added", function (childSnapshot) {
+database.ref("/rsvp").on("child_added", function (childSnapshot) {
     totalGuest = totalGuest + parseInt(childSnapshot.val().size);
     var newTableItem = $("<tr>");
     // var tableGuestEmail = $("<td>");
@@ -96,3 +96,5 @@ var x = setInterval(function () {
         $("#demo").text("Days Left" + days)
     }
 }, 1000);
+
+

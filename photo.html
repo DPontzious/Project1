@@ -108,7 +108,7 @@
                 messagingSenderId: "776832260377"
             };
             firebase.initializeApp(config);
-            // var images = [];
+           
             var storageRef;
             var database = firebase.database();
             var fileButton = $("#fileButton");
@@ -116,16 +116,16 @@
                 var file = e.target.files[0];
                 storageRef = firebase.storage().ref('photos/' + file.name);
                 console.log("File Name: " + file.name);
-                // images.push(file.name);
+                
                 storageRef.put(file);
                 database.ref("/images").push({
                     img: file.name
                 });
 
-                // window.location.reload(true); 
+                
                 storageRef.put(file).on('state_changed', function progress(snapshot) {
                     var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-                    // uploader.value = percentage;
+                    
 
                     $(".progress-bar").attr("aria-valuenow", percentage);
                     $(".progress-bar").attr("style", "width: " + percentage + "%");
