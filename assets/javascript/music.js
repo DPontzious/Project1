@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(".songButton").click(function (event) {
+    $(".songButton").on("click", function (event) {
         event.preventDefault();
 
         var userInput = $("#songName").val().trim();
@@ -38,6 +38,19 @@ $(document).ready(function () {
         });
     });
 
+    $("#songName").on("keyup", function (event) {
+
+        if (event.keyCode === 13) {
+            $(".songButton").click();
+        }
+    });
+
+    $("#songName").bind('keypress', function (e) {
+        if (e.keyCode == 13) {
+            return false;
+        }
+    });
+
     $(document).on("click", "#btn", function () {
         var userSong = $(this).attr("data-id");
         console.log($(this).attr("data-id"))
@@ -53,22 +66,25 @@ $(document).ready(function () {
         }).then(function (data) {
 
 
-
-        });
-
-        $("#refreshBtn").on("click", refresh);
-
-        function refresh() {
-
-            $("#spotifyPlaylist").attr("src", "");
-            $("#spotifyPlaylist").attr("src", "https://open.spotify.com/embed/user/hgy7b48qtv7hbervxygyg3c48/playlist/7lj8pK87kMYQ6t7VgTle2h");
-
-
-        }
-
-
-
+        })
 
 
 
     });
+
+    $("#refreshBtn").on("click", refresh);
+
+    function refresh() {
+
+        $("#spotifyPlaylist").attr("src", "");
+        $("#spotifyPlaylist").attr("src", "https://open.spotify.com/embed/user/hgy7b48qtv7hbervxygyg3c48/playlist/7lj8pK87kMYQ6t7VgTle2h");
+
+
+    }
+
+
+
+
+
+
+});
