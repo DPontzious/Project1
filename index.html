@@ -15,7 +15,7 @@
         crossorigin="anonymous">
     <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
     <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
-    <script type="text/javascript" src="assets/javascript/carpool.js"></script>
+    
 
 
     <style>
@@ -52,7 +52,7 @@
                     <div class="count">
                         <!-- style="width: 21rem;" -->
                         <div class="card-body text-center">
-                            <h3 id="countdownText">WEDDING COUNTDOWN :</h3>
+                            <h3 id="countdownText">WEDDING COUNTDOWN</h3>
                             <p id="demo"></p>
                         </div>
                     </div>
@@ -100,6 +100,7 @@
                                 <!-- Here we have our final submit button -->
                                 <button type="submit" class="btn btn-white" id="submit-button">
                                     Submit</button>
+                                    <div id="submitSuccess"></div>
                             </form>
                         </div>
                     </div>
@@ -116,7 +117,6 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">Name</th>
-                                        <!-- <th scope="col">Email</th> -->
                                         <th scope="col"># of Attendees</th>
                                         <th scope="col">Message</th>
                                     </tr>
