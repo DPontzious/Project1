@@ -15,6 +15,9 @@ $("#submit-button").on("click", function (event) {
     var guestName = $("#guest-name").val().trim();
     var groupSize = $("#group-size").val();
     var guestMessage = $("#guest-message").val().trim();
+    $("#email-warning").text("");
+    $("#name-warning").text("");
+    $("#size-warning").text("");
     if (validateEmail(guestEmail) && guestName.length > 2 && groupSize > 0) {
         database.ref("/rsvp").push({
             email: guestEmail,
@@ -26,9 +29,9 @@ $("#submit-button").on("click", function (event) {
         $("#guest-name").val("");
         $("#group-size").val("");
         $("#guest-message").val("");
-        
+
         $("#submitSuccess").append($("<h5>").text("Successfully Submitted.").addClass("text-success"));
-        setTimeout(function(){$("#submitSuccess").empty(); }, 5000);
+        setTimeout(function () { $("#submitSuccess").empty(); }, 5000);
     } else {
         $("#email-warning").text("");
         $("#name-warning").text("");

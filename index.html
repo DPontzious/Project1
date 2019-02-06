@@ -64,12 +64,12 @@
 
         <div class="row">
             <div class="col">
-                <img id="imgMain" src="assets/images/IMG_3153.jpeg" width="600px" height="850px" alt="couplesphoto">
+                <img id="imgMain" src="assets/images/20180304_130149.jpg" alt="couplesphoto">
             </div>
             <div class="col" id="rsvp-form">
                 <div class="row">
                     <div class="count">
-
+                        <!-- style="width: 21rem;" -->
                         <div class="card-body text-center">
                             <h3 id="countdownText">WEDDING COUNTDOWN</h3>
                             <p id="demo">STARTS IN</p>
@@ -83,71 +83,75 @@
                         <span class="far fa-pause-circle"></span></button>
                 </div>
                 <div class="row">
-                    <div class="card">
-                        <div class="card-header">
-                            <strong>
-                                RSVP by</strong>
-                        </div>
-                        <div class="card-body">
-                            <!-- Here we create an HTML Form for handling the inputs-->
-                            <form role="form">
-                                <!-- Here we create the text box for capturing the search term-->
-                                <div class="form-group" id="form-email">
-                                    <label for="guest-email">Email</label>
-                                    <input type="email" class="form-control" id="guest-email" required>
-                                </div>
-                                <h6 class="text-danger" id="email-warning"></h6>
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong>
+                                    RSVP by</strong>
+                            </div>
+                            <div class="card-body">
+                                <!-- Here we create an HTML Form for handling the inputs-->
+                                <form role="form">
+                                    <!-- Here we create the text box for capturing the search term-->
+                                    <div class="form-group" id="form-email">
+                                        <label for="guest-email">Email</label>
+                                        <input type="email" class="form-control" id="guest-email" required>
+                                    </div>
+                                    <h6 class="text-danger" id="email-warning"></h6>
 
-                                <!-- Here we capture the number of records that the user wants to retrieve  -->
-                                <div class="form-group" id="form-name">
-                                    <label for="guest-name">Full Name</label>
-                                    <input type="text" class="form-control" id="guest-name">
-                                </div>
-                                <h6 class="text-danger" id="name-warning"></h6>
-                                <!-- Here we capture the Start Year Parameter-->
-                                <div class="form-group" id="form-size">
-                                    <label for="group-size">Number of Attendees (Including Yourself)</label>
-                                    <input type="number" class="form-control" id="group-size">
-                                </div>
-                                <h6 class="text-danger" id="size-warning"></h6>
-                                <!-- Here we capture the End Year Parameter -->
-                                <div class="form-group" id="form-message">
-                                    <label for="guest-message">Message for the couple (Optional)</label>
-                                    <textarea class="form-control" id="guest-message" rows="5"></textarea>
-                                </div>
+                                    <!-- Here we capture the number of records that the user wants to retrieve  -->
+                                    <div class="form-group" id="form-name">
+                                        <label for="guest-name">Full Name</label>
+                                        <input type="text" class="form-control" id="guest-name">
+                                    </div>
+                                    <h6 class="text-danger" id="name-warning"></h6>
+                                    <!-- Here we capture the Start Year Parameter-->
+                                    <div class="form-group" id="form-size">
+                                        <label for="group-size">Number of Attendees (Including Yourself)</label>
+                                        <input type="number" class="form-control" id="group-size">
+                                    </div>
+                                    <h6 class="text-danger" id="size-warning"></h6>
+                                    <!-- Here we capture the End Year Parameter -->
+                                    <div class="form-group" id="form-message">
+                                        <label for="guest-message">Message for the couple (Optional)</label>
+                                        <textarea class="form-control" id="guest-message" rows="2"></textarea>
+                                    </div>
 
-                                <!-- Here we have our final submit button -->
-                                <button type="submit" class="btn btn-white" id="submit-button">
-                                    Submit</button>
-                                <div id="submitSuccess"></div>
-                            </form>
+                                    <!-- Here we have our final submit button -->
+                                    <button type="submit" class="btn btn-white" id="submit-button">
+                                        Submit</button>
+                                    <div id="submitSuccess"></div>
+                                </form>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
-            <div class="row" id="guestlist">
-                <div class="col">
-                    <div class="card">
-                        <div class="card-header">
-                            List of Guests
-                        </div>
-                        <div class="card-body">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Name</th>
-                                        <th scope="col"># of Attendees</th>
-                                        <th scope="col">Message</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="table-body">
 
-                                </tbody>
-                            </table>
+        </div>
+        <div class="row" id="guestlist">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        List of Guests
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col-4">Name</th>
+                                    <th scope="col-4"># of Attendees</th>
+                                    <th scope="col-4">Message</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-body">
 
-                            <h4 id="totalGuest"></h4>
+                            </tbody>
+                        </table>
 
-                        </div>
+                        <h4 id="totalGuest"></h4>
+
                     </div>
                 </div>
             </div>
