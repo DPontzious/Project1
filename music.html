@@ -32,45 +32,57 @@
         <div class="row">
             <div class="col-md-5 text-center">
                 <iframe id="spotifyPlaylist" src="https://open.spotify.com/embed/user/hgy7b48qtv7hbervxygyg3c48/playlist/7lj8pK87kMYQ6t7VgTle2h"
-                     width="400" height="520" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    width="400" height="520" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 <button id="refreshBtn" class="btn">Refresh</button>
                 <h6>Playlist refresh may take up to 30 seconds.</h6>
 
             </div>
             <div class="col-md-7" id="songBox">
                 <div class="row ">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <br>
 
 
-                        <h5 class="ml-4">Song Name</h5>
+                        <h3 style="width: auto; border-bottom: 2px dashed #aabf94;  text-shadow: 2px 2px #c48370; color: #e8ad9a"
+                            class="ml-3 text-center">Wedding Song Request</h3>
 
 
-                        <form class="form-inline ">
 
 
-                            <div class="form-group mx-sm-3 mb-2">
-                                <input type="songName" class="form-control" id="songName" aria-describedby="emailHelp"
-                                    placeholder="Enter Song Name Only">
-                                    <button type="submit" class="songButton btn rounded mx-sm-3 mb-0" style="background-color: #aabf94">Submit</button>
-                            </div>
-                            
-                        </form>
 
 
                     </div>
 
                 </div>
-                <div id="songList" class="row">
+                <div class="row">
+                    <div class="col-9">
+                        <form class="form">
 
+
+                            <div class="form-group mx-sm-3 mb-2">
+                                <input type="songName" class="form-control" id="songName" aria-describedby="emailHelp"
+                                    placeholder="Enter a Song Name">
+                               
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="songButton btn rounded mx-sm-3 mb-0" style="background-color: #aabf94">Search</button>
+                    </div>
                 </div>
+                <div id="songList" class="row"></div>
 
 
             </div>
-            <div class="col-md-4">
+            
 
-            </div>
+
         </div>
+        <div class="col-md-4">
+
+        </div>
+    </div>
 
 
     </div>
