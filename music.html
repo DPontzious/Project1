@@ -30,15 +30,15 @@
 
         </div>
         <div class="row">
-            <div class="col-md-4 text-center">
+            <div class="col-md-5 text-center">
                 <iframe id="spotifyPlaylist" src="https://open.spotify.com/embed/user/hgy7b48qtv7hbervxygyg3c48/playlist/7lj8pK87kMYQ6t7VgTle2h"
-                    width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                     width="400" height="520" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 <button id="refreshBtn" class="btn">Refresh</button>
                 <h6>Playlist refresh may take up to 30 seconds.</h6>
 
             </div>
-            <div class="col-md-8 ">
-                <div class="row justify-content-center">
+            <div class="col-md-7" id="songBox">
+                <div class="row ">
                     <div class="col-md-6">
                         <br>
 
@@ -46,14 +46,15 @@
                         <h5 class="ml-4">Song Name</h5>
 
 
-                        <form class="form-inline align-middle">
+                        <form class="form-inline ">
 
 
                             <div class="form-group mx-sm-3 mb-2">
                                 <input type="songName" class="form-control" id="songName" aria-describedby="emailHelp"
                                     placeholder="Enter Song Name Only">
+                                    <button type="submit" class="songButton btn rounded mx-sm-3 mb-0" style="background-color: #aabf94">Submit</button>
                             </div>
-                            <button type="submit" class="songButton btn rounded mb-2" style="background-color: #aabf94">Submit</button>
+                            
                         </form>
 
 
@@ -74,7 +75,7 @@
 
     </div>
 
-    <footer class="mt-4 fixed-bottom" style="background-color: #aabf94; opacity: 0.7">
+    <footer class="mt-4" style="background-color: #aabf94; opacity: 0.7">
         <div class="container-fluid py-3">
 
             <div class="row">
