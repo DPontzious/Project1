@@ -47,13 +47,13 @@
    .card{
        margin-bottom: 15px;
        width: 100%;
-        border: solid 10px #afbb95;
+        border: solid 10px #aabf94;
         height: 100%;
    }
    .count{
       background: url("../images/flowers.jpeg"); 
        width: 100%;
-        border: solid 10px #afbb95;
+        border: solid 10px #aabf94;
         height: 100%;
         margin-bottom: 15px;
    }
@@ -64,7 +64,7 @@
    }
 
    #refreshBtn {
-       background-color: #afbb95;
+       background-color: #aabf94;
    }
    #countdownText{
         text-shadow: 2px 2px #c48370;
