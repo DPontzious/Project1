@@ -139,7 +139,7 @@
             });
 
             var i = 0;
-            database.ref("/images").on("child_added", function (childSnapshot) {
+            database.ref("/images").on("child_added",function (childSnapshot) {
                 var imgHolder = $("<img>");
                 var storage = firebase.storage();
                 var pathReference = storage.ref('photos/' + childSnapshot.val().img);
