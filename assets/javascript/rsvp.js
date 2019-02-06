@@ -16,7 +16,7 @@ $("#submit-button").on("click", function (event) {
     var groupSize = $("#group-size").val();
     var guestMessage = $("#guest-message").val().trim();
     if (validateEmail(guestEmail) && guestName.length > 2 && groupSize > 0) {
-        database.ref().push({
+        database.ref("/rsvp").push({
             email: guestEmail,
             name: guestName,
             size: groupSize,
@@ -44,7 +44,7 @@ $("#submit-button").on("click", function (event) {
         }
     }
 });
-database.ref().on("child_added", function (childSnapshot) {
+database.ref("/rsvp").on("child_added", function (childSnapshot) {
     totalGuest = totalGuest + parseInt(childSnapshot.val().size);
     var newTableItem = $("<tr>");
     // var tableGuestEmail = $("<td>");
