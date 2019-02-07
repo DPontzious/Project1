@@ -50,11 +50,14 @@
          background-color: rgb(255, 255, 255, .9); 
    }
    .count{
-       width: 100%;
+        width: 100%;
         border: solid 10px #afbb94;
         height: 100%;
         margin-bottom: 15px;
-        background: url("../images/flowers.jpeg"); 
+        background: url("../images/flowercopy.png");
+       font-family: 'Merriweather', serif;
+        font-weight: 400;
+        background-image: 
         /* background-color: rgb(255, 255, 255, .9);  */
    }
    .card-body{
