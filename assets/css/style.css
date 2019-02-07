@@ -13,11 +13,10 @@
         border: solid 10px #aabf94;
    }
    #songBox {
-    background-color: white;
+    background-color: rgb(255, 255, 255, .9);
     margin-top: 50px;
     border: solid 10px #aabf94;
-
-   }
+}
    .card-header{
        background-color: #aabf94;
    }
@@ -48,23 +47,35 @@
        width: 100%;
         border: solid 10px #afbb94;
         height: 100%;
+         background-color: rgb(255, 255, 255, .9); 
    }
    .count{
-      background: url("../images/flowers.jpeg"); 
-       width: 100%;
+        width: 100%;
         border: solid 10px #afbb94;
         height: 100%;
         margin-bottom: 15px;
+        background: url("../images/flowercopy.png");
+       font-family: 'Merriweather', serif;
+        font-weight: 400;
+        background-image: 
+        /* background-color: rgb(255, 255, 255, .9);  */
    }
    .card-body{
-       color: #e8ad9a;
+       color: #d69078;
        width: 100%;
-
-   }
-
-   #refreshBtn {
+       /* opacity: .9; */
+ }
+    #refreshBtn {
        background-color: #afbb94;
    }
    #countdownText{
         text-shadow: 2px 2px #c48370;
+   }
+   #buttonsontop{
+    margin-top:15px;
+    line-height: (1*height - font-size);
+    text-align: right;
+   }
+   .col-12{
+       opacity: .9;
    }

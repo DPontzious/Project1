@@ -7,31 +7,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Photos</title>
     <link rel="icon" type="image/jpg" href="assets/images/favicon.jpg">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <!-- <style>
         img {
             height: 500px;
-
-        }
-    </style>
+}
+    </style> -->
 </head>
 
 <body>
     <div class="container">
-        <div class="text-right">
-            <button type="button" class="btn btn-lg"><a href="index.html" class="text-decoration-none">Main Page</a>
-            </button>
-            <button type="button" class="btn btn-lg"><a href="photo.html" class="text-decoration-none">Photos</a>
-            </button>
-            <button type="button" class="btn btn-lg"><a href="carpool.html" class="text-decoration-none">Location</a>
-            </button>
-            <button type="button" class="btn btn-lg"><a href="music.html" class="text-decoration-none">Music</a>
-            </button>
+        <div class="row justify-content-between">
+            <div class="col">
+                <!-- <a href="https://fontmeme.com/calligraphy-fonts/"> -->
+                <img src="https://fontmeme.com/permalink/190206/7d9178a15a578701bd8c140def37a92a.png">
+            </div>
+            <div class="col d-flex align-items-end justify-content-end ">
+                <div class="text-right ">
+                    <button type="button" class="btn btn-lg"><a href="index.html" class="text-decoration-none">Main
+                            Page</a>
+                    </button>
+                    <button type="button" class="btn btn-lg"><a href="photo.html" class="text-decoration-none">Photos</a>
+                    </button>
+                    <button type="button" class="btn btn-lg"><a href="carpool.html" class="text-decoration-none">Location</a>
+                    </button>
+                    <button type="button" class="btn btn-lg"><a href="music.html" class="text-decoration-none">Music</a>
+                    </button>
+                </div>
+            </div>
         </div>
         <div class="row">
             <div class="col" id="image-view"></div>
@@ -40,10 +47,8 @@
             <div class="col">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
-
                     </ol>
                     <div class="carousel-inner">
-
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -67,9 +72,9 @@
         <div class="card text-center">
             <div class="card-body justify-content-center">
                 <h5 class="card-title">Upload a Photo</h5>
-                <p class="card-text">Add some of your bride and groom pictures here.</p>
-                <button class="btn btn-secondary"><label for="fileButton">Upload</label><input type="file"
-                        value="upload" id="fileButton" style="display:none" /></button>
+                <p class="card-text">Add a photo of the bride and groom.</p>
+                <button class="btn btn-secondary"><label for="fileButton">Upload</label><input type="file" value="upload"
+                        id="fileButton" style="display:none" /></button>
                 <div id="warningImg"></div>
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar"
@@ -81,23 +86,19 @@
     </div>
     <footer class="mt-4" style="background-color: #aabf94; opacity: 0.7">
         <div class="container-fluid py-3">
-
             <div class="row">
                 <div class="col text-center text-white">
                     <p>Built by Paul, Danelle, Yasiin and Mustafa</p>
-
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
     <script>
@@ -111,7 +112,6 @@
                 messagingSenderId: "776832260377"
             };
             firebase.initializeApp(config);
-
             var storageRef;
             var database = firebase.database();
             var fileButton = $("#fileButton");
@@ -147,13 +147,11 @@
 
                 } else {
                     $("#warningImg").append($("<p>").addClass("text-danger").text("Invalid File. Acceptable extensions are .png, .jpg and .jpeg"));
-                 }
-
+                }
             });
-
             var i = 0;
             database.ref("/images").on("child_added", function (childSnapshot) {
-                var imgHolder = $("<img>");
+                var imgHolder = $("<img>").height('500px');
                 var storage = firebase.storage();
                 var pathReference = storage.ref('photos/' + childSnapshot.val().img);
                 pathReference.getDownloadURL().then(function (url) {
@@ -168,7 +166,6 @@
                 carouselIndicator.addClass("bg-secondary");
                 // change button color
                 var imageDiv = $("<div>").addClass("carousel-item");
-
                 imgHolder.attr("alt", "wedding");
                 imgHolder.addClass("mx-auto d-block");
                 if (i === 0) {
@@ -177,13 +174,11 @@
                     imageDiv.addClass("active");
                 } else {
                     i++;
-
                 }
                 $(".carousel-indicators").append(carouselIndicator);
                 imageDiv.append(imgHolder);
                 $(".carousel-inner").append(imageDiv);
             }, function (errorObject) {
-
                 // In case of error this will print the error
                 console.log("The read failed: " + errorObject.code);
             });

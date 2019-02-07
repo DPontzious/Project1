@@ -10,7 +10,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/javascript/music.js"></script>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -18,16 +17,25 @@
 
 <body>
     <div class="container">
-        <div class="text-right">
-            <button type="button" class="btn btn-lg"><a href="index.html" class="text-decoration-none">Main Page</a>
-            </button>
-            <button type="button" class="btn btn-lg"><a href="photo.html" class="text-decoration-none">Photos</a>
-            </button>
-            <button type="button" class="btn btn-lg"><a href="carpool.html" class="text-decoration-none">Location</a>
-            </button>
-            <button type="button" class="btn btn-lg"><a href="music.html" class="text-decoration-none">Music</a>
-            </button>
-
+        <br>
+        <div class="row justify-content-between">
+            <div class="col">
+                <!-- <a href="https://fontmeme.com/calligraphy-fonts/"> -->
+                <img src="https://fontmeme.com/permalink/190206/7d9178a15a578701bd8c140def37a92a.png">
+            </div>
+            <div class="col d-flex align-items-end justify-content-end ">
+                <div class="text-right ">
+                    <button type="button" class="btn btn-lg"><a href="index.html" class="text-decoration-none">Main
+                            Page</a>
+                    </button>
+                    <button type="button" class="btn btn-lg"><a href="photo.html" class="text-decoration-none">Photos</a>
+                    </button>
+                    <button type="button" class="btn btn-lg"><a href="carpool.html" class="text-decoration-none">Location</a>
+                    </button>
+                    <button type="button" class="btn btn-lg"><a href="music.html" class="text-decoration-none">Music</a>
+                    </button>
+                </div>
+            </div>
         </div>
         <div class="row">
             <div class="col-md-5 text-center">
@@ -35,36 +43,22 @@
                     width="400" height="520" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 <button id="refreshBtn" class="btn">Refresh</button>
                 <h6>Playlist refresh may take up to 30 seconds.</h6>
-
             </div>
             <div class="col-md-7" id="songBox">
                 <div class="row ">
                     <div class="col-md-12">
                         <br>
-
-
-                        <h3 style="width: auto;border-bottom: 2px dashed #aabf94;text-shadow: 2px 2px #c48370;color: #e8ad9a;font-family: cursive;font-size: 50px;"
+                        <h3 style="width: auto;border-bottom: 3px dashed #aabf94;text-shadow: 2px 2px #c48370;color: #e8ad9a;font-family: cursive;font-size: 50px;"
                             class="ml-3 text-center">Wedding Song Request</h3>
-
-
-
-
-
-
                     </div>
-
                 </div>
                 <div class="row">
                     <div class="col-9">
                         <form class="form">
-
-
                             <div class="form-group mx-sm-3 mb-2">
                                 <input type="songName" class="form-control" id="songName" aria-describedby="emailHelp"
                                     placeholder="Enter a Song Name">
-
                             </div>
-
                         </form>
                     </div>
                     <div class="col">
@@ -72,34 +66,21 @@
                     </div>
                 </div>
                 <div id="songList" class="row"></div>
-
-
             </div>
-
-
-
         </div>
         <div class="col-md-4">
-
         </div>
     </div>
-
-
     </div>
-
     <footer class="mt-4" style="background-color: #aabf94; opacity: 0.7">
         <div class="container-fluid py-3">
-
             <div class="row">
                 <div class="col text-center text-white">
                     <p>Built by Paul, Danelle, Yasiin and Mustafa</p>
-
                 </div>
             </div>
         </div>
     </footer>
-
 </body>
-
 
 </html>

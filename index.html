@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome</title>
     <link rel="icon" type="image/jpg" href="assets/images/favicon.jpg">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -15,32 +14,22 @@
         crossorigin="anonymous">
     <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
     <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
-
-
-
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <style>
         /* Set the size of the div element that contains the map */
     </style>
 </head>
 
 <body>
-
-
-
-
-
     <div class="container">
         <br>
-
         <div class="row justify-content-between">
             <div class="col">
-                <a href="https://fontmeme.com/calligraphy-fonts/"><img src="https://fontmeme.com/permalink/190206/7d9178a15a578701bd8c140def37a92a.png">
+                <!-- <a href="https://fontmeme.com/calligraphy-fonts/"> -->
+                <img src="https://fontmeme.com/permalink/190206/7d9178a15a578701bd8c140def37a92a.png">
             </div>
-
             <div class="col d-flex align-items-end justify-content-end ">
                 <div class="text-right ">
-
-
                     <button type="button" class="btn btn-lg"><a href="index.html" class="text-decoration-none">Main
                             Page</a>
                     </button>
@@ -50,18 +39,9 @@
                     </button>
                     <button type="button" class="btn btn-lg"><a href="music.html" class="text-decoration-none">Music</a>
                     </button>
-
-
-
                 </div>
             </div>
-
-
-
-
         </div>
-
-
         <div class="row">
             <div class="col">
                 <img id="imgMain" src="assets/images/20180304_130149.jpg" alt="couplesphoto">
@@ -84,57 +64,55 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                            <div class="card">
-                                    <div class="card-header">
-                                        <strong>
-                                            RSVP by</strong>
+                        <div class="card">
+                            <div class="card-header">
+                                <strong>
+                                    RSVP</strong>
+                            </div>
+                            <div class="card-body">
+                                <!-- Here we create an HTML Form for handling the inputs-->
+                                <form role="form">
+                                    <!-- Here we create the text box for capturing the search term-->
+                                    <div class="form-group" id="form-email">
+                                        <label for="guest-email">Email</label>
+                                        <input type="email" class="form-control" id="guest-email" required>
                                     </div>
-                                    <div class="card-body">
-                                        <!-- Here we create an HTML Form for handling the inputs-->
-                                        <form role="form">
-                                            <!-- Here we create the text box for capturing the search term-->
-                                            <div class="form-group" id="form-email">
-                                                <label for="guest-email">Email</label>
-                                                <input type="email" class="form-control" id="guest-email" required>
-                                            </div>
-                                            <h6 class="text-danger" id="email-warning"></h6>
-            
-                                            <!-- Here we capture the number of records that the user wants to retrieve  -->
-                                            <div class="form-group" id="form-name">
-                                                <label for="guest-name">Full Name</label>
-                                                <input type="text" class="form-control" id="guest-name">
-                                            </div>
-                                            <h6 class="text-danger" id="name-warning"></h6>
-                                            <!-- Here we capture the Start Year Parameter-->
-                                            <div class="form-group" id="form-size">
-                                                <label for="group-size">Number of Attendees (Including Yourself)</label>
-                                                <input type="number" class="form-control" id="group-size">
-                                            </div>
-                                            <h6 class="text-danger" id="size-warning"></h6>
-                                            <!-- Here we capture the End Year Parameter -->
-                                            <div class="form-group" id="form-message">
-                                                <label for="guest-message">Message for the couple (Optional)</label>
-                                                <textarea class="form-control" id="guest-message" rows="2"></textarea>
-                                            </div>
-            
-                                            <!-- Here we have our final submit button -->
-                                            <button type="submit" class="btn btn-white" id="submit-button">
-                                                Submit</button>
-                                            <div id="submitSuccess"></div>
-                                        </form>
+                                    <h6 class="text-danger" id="email-warning"></h6>
+
+                                    <!-- Here we capture the number of records that the user wants to retrieve  -->
+                                    <div class="form-group" id="form-name">
+                                        <label for="guest-name">Full Name</label>
+                                        <input type="text" class="form-control" id="guest-name">
                                     </div>
-                                </div>
+                                    <h6 class="text-danger" id="name-warning"></h6>
+                                    <!-- Here we capture the Start Year Parameter-->
+                                    <div class="form-group" id="form-size">
+                                        <label for="group-size">Number of Attendees (Including Yourself)</label>
+                                        <input type="number" class="form-control" id="group-size">
+                                    </div>
+                                    <h6 class="text-danger" id="size-warning"></h6>
+                                    <!-- Here we capture the End Year Parameter -->
+                                    <div class="form-group" id="form-message">
+                                        <label for="guest-message">Message for the couple (Optional)</label>
+                                        <textarea class="form-control" id="guest-message" rows="2"></textarea>
+                                    </div>
+
+                                    <!-- Here we have our final submit button -->
+                                    <button type="submit" class="btn btn-white" id="submit-button">
+                                        Submit</button>
+                                    <div id="submitSuccess"></div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    
                 </div>
             </div>
-
         </div>
         <div class="row" id="guestlist">
             <div class="col mr-0">
                 <div class="card">
                     <div class="card-header">
-                        List of Guests
+                        <strong>Guest List</strong>
                     </div>
                     <div class="card-body">
                         <table class="table">
@@ -146,33 +124,23 @@
                                 </tr>
                             </thead>
                             <tbody id="table-body">
-
                             </tbody>
                         </table>
-
                         <h4 id="totalGuest"></h4>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <footer class="mt-4" style="background-color: #aabf94; opacity: 0.7">
         <div class="container-fluid py-3">
-
             <div class="row">
                 <div class="col text-center text-white">
                     <p>Built by Paul, Danelle, Yasiin and Mustafa</p>
-
                 </div>
             </div>
         </div>
     </footer>
-
-
-
-
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
@@ -182,11 +150,8 @@
     <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
     <script src="assets/javascript/rsvp.js"></script>
     <script>
-
-
         var audioElement = document.createElement("audio");
         audioElement.setAttribute("src", "assets/audio/themesong.mp3");
-
         // Theme Button
         $(".theme-button").on("click", function () {
             audioElement.play();
