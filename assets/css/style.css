@@ -51,12 +51,21 @@
         height: 100%;
    }
    .count{
-      background: url("../images/flowers.jpeg"); 
        width: 100%;
         border: solid 10px #afbb94;
         height: 100%;
         margin-bottom: 15px;
+        /* background: url("../images/flowers.jpeg");  */
    }
+   .count::before{
+    content: "";
+    background: url("../images/flowers.jpeg");
+    opacity: 0.5;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+
+}
    .card-body{
        color: #e8ad9a;
        width: 100%;
@@ -68,7 +77,6 @@
    }
    #countdownText{
         text-shadow: 2px 2px #c48370;
-        font-family: 
    }
    #buttonsontop{
     margin-top:15px;

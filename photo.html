@@ -40,10 +40,8 @@
             <div class="col">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
-
                     </ol>
                     <div class="carousel-inner">
-
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -80,11 +78,9 @@
     </div>
     <footer class="mt-4" style="background-color: #aabf94; opacity: 0.7">
         <div class="container-fluid py-3">
-
             <div class="row">
                 <div class="col text-center text-white">
                     <p>Built by Paul, Danelle, Yasiin and Mustafa</p>
-
                 </div>
             </div>
         </div>
@@ -108,7 +104,6 @@
                 messagingSenderId: "776832260377"
             };
             firebase.initializeApp(config);
-           
             var storageRef;
             var database = firebase.database();
             var fileButton = $("#fileButton");
@@ -116,17 +111,12 @@
                 var file = e.target.files[0];
                 storageRef = firebase.storage().ref('photos/' + file.name);
                 console.log("File Name: " + file.name);
-                
                 storageRef.put(file);
                 database.ref("/images").push({
                     img: file.name
                 });
-
-                
                 storageRef.put(file).on('state_changed', function progress(snapshot) {
                     var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-                    
-
                     $(".progress-bar").attr("aria-valuenow", percentage);
                     $(".progress-bar").attr("style", "width: " + percentage + "%");
                     $(".progress-bar").text(percentage + "%");
@@ -137,9 +127,8 @@
                     }
                 })
             });
-
             var i = 0;
-            database.ref("/images").on("child_added",function (childSnapshot) {
+            database.ref("/images").on("child_added", function (childSnapshot) {
                 var imgHolder = $("<img>");
                 var storage = firebase.storage();
                 var pathReference = storage.ref('photos/' + childSnapshot.val().img);
@@ -155,7 +144,6 @@
                 carouselIndicator.addClass("bg-secondary");
                 // change button color
                 var imageDiv = $("<div>").addClass("carousel-item");
-
                 imgHolder.attr("alt", "wedding");
                 imgHolder.addClass("mx-auto d-block");
                 if (i === 0) {
@@ -164,13 +152,11 @@
                     imageDiv.addClass("active");
                 } else {
                     i++;
-
                 }
                 $(".carousel-indicators").append(carouselIndicator);
                 imageDiv.append(imgHolder);
                 $(".carousel-inner").append(imageDiv);
             }, function (errorObject) {
-
                 // In case of error this will print the error
                 console.log("The read failed: " + errorObject.code);
             });
