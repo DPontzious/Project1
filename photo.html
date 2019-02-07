@@ -137,7 +137,7 @@
 
                         $(".progress-bar").attr("aria-valuenow", percentage);
                         $(".progress-bar").attr("style", "width: " + percentage + "%");
-                        $(".progress-bar").text(percentage + "%");
+                        $(".progress-bar").text(Math.round(percentage)+ "%");
                         if (percentage === 100) {
                             var status = $("<h5>").addClass("text-success").text("Photo is uploaded.");
                             $("#uploadBttn").append(status);
